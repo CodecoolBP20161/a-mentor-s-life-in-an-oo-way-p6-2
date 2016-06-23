@@ -66,3 +66,19 @@ Gives back a student with the same full name as the argument from ```students```
 
 #### Return value
 ```Mentor``` object
+
+### ```overall_energy```
+
+#### Arguments
+None
+
+#### Return value
+Overall energy level of the whole class.
+
+### ```overall_knowledge```
+
+#### Arguments
+None
+
+#### Return value
+Overall knowledge level of the whole class.
