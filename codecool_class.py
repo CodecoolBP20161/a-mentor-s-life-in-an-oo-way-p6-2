@@ -28,8 +28,8 @@ class CodecoolClass:
         try:
             x = [i for i in self.students if name[0] == i.first_name and name[1] == i.last_name][0]
             print('''
-{0} {1} was found in the list of the students. He already had his coffee so he is ready to work.
-'''.format(name[0], name[1]))
+{0} {1} was found in the list of the students.
+He already had his coffee so he is ready to work.'''.format(name[0], name[1]))
             return x
         except:
             print('''
@@ -53,3 +53,5 @@ class CodecoolClass:
         mentors_knowledge = sum([i.knowledge_level for i in self.mentors])
         students_knowledge = sum([i.knowledge_level for i in self.students])
         return (mentors_knowledge + students_knowledge)
+
+        
