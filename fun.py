@@ -4,7 +4,7 @@ from codecool_class import *
 from datetime import date
 import random
 
-o = CodecoolClass.generate_local().students
+students = CodecoolClass.generate_local().students
 
 
 class Fun(object):
@@ -27,9 +27,11 @@ class Fun(object):
             s.append(z)
         while len(s) not in sol:
             v = random.choice(s)
+            not_interested = []
+            not_interested.append(v)
             s.remove(v)
-            print("%s was not interested in playing." % (v[0].first_name))
-            print("%s was not interested in playing." % (v[1].first_name))
+            for names in not_interested:
+                print("%s was not interested in playing." % (names[0].first_name))
         return s
 
     @staticmethod
@@ -41,11 +43,8 @@ class Fun(object):
         else:
             return team2
 
-    # @staticmethod
     def game(self, team):
         """  """
-        # print(len(team))
-
         self.winner = []
 
         while team:
@@ -53,16 +52,38 @@ class Fun(object):
             sample = random.sample(team, 2)
             team.remove(sample[0])
             team.remove(sample[1])
-            self.winner.append(self.decide(sample[0], sample[1]))
+            winner_student = self.decide(sample[0], sample[1])
+            self.winner.append(winner_student)
+
+        if len(self.winner) == 4:
+
+            x = [i[0].first_name for i in self.winner]
+            y = [i[1].first_name for i in self.winner]
+
+            for i, j in zip(x, y):
+                print(i + " and " + j + " won the Quarterfinals!")
+
+        elif len(self.winner) == 2:
+
+            q = [i[0].first_name for i in self.winner]
+            w = [i[1].first_name for i in self.winner]
+
+            for i, j in zip(q, w):
+                print(i + " and " + j + " won the Semifinals!")
 
         if len(self.winner) == 1:
 
             print(self.winner[0][0].first_name + " and " + self.winner[0][1].first_name + " won the tournament!")
+            epicwin = self.winner[0]
+            print(epicwin[0].first_name + "'s energy level increased by 2")
+            print(epicwin[1].first_name + "'s energy level increased by 2")
+            epicwin[0].change_levels("energy_level", 2)
+            epicwin[1].change_levels("energy_level", 2)
             return self.winner
 
         else:
             self.game(self.winner)
 
-mm = Fun(o)
+mm = Fun(students)
 asd = mm.select_teams()
 mm.game(asd)
