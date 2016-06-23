@@ -2,14 +2,14 @@ Anna,Kertész,1981,female,7,3
 Eszter,Kalóz,1993,female,1,2
 Ádám,Gerlóczi,1887,male,1,7
 Dóra,Sztankó,1894,female,3,4
-Kriszta,Baranyai,female,5,8
+Kriszta,Baranyai,1700,female,5,8
 Tamás,Jakab,1687,male,9,6
 Bence,Somogyi,1985,male,8,6
 Márk,Makai,2016,male,5,6
 László,Milu,1789,male,9,5
 Rózsa,Zuhany,1999,notsure,2,1
 András,Hinkel,1978,male,7,2
-Dániel,Balogh,male,3,3
+Dániel,Balogh,1890,male,3,3
 Tamara,Bólya,1993,female,7,7
 Misi,Füredi,1589,male,7,8
 Vivien,Együd,1456,female,1,1
@@ -21,5 +21,5 @@ Miklós,Csepella,1986,male,7,6
 Mónika,Lombos,1986,female,8,7
 Jani,komlancz,1965,male,5,3
 Levente,Csányi,1645,male,1,1
-Dóra,Medgyasszay, 1658, female,2,3
+Dóra,Medgyasszay,1658,female,2,3
 Barbara,Ceglédi,1598,female,8,9
