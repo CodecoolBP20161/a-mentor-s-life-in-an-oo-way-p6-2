@@ -50,3 +50,18 @@ All of the arguments of the class itself.
 
 #### Return value
 None
+
+### ```change_levels```
+Method to change integer type instance attributes.
+
+#### Arguments
+
+* ```attribute```
+  * data type: string
+  * description: The instance's attribute to be changed
+* ```delta```
+    * data type: integer
+    * description: The size of the attribute change
+
+#### Return value
+None
