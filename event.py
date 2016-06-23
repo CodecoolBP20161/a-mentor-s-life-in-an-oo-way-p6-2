@@ -5,7 +5,3 @@ class Event:
     @classmethod
     def time_manage(cls, ize):
         cls.time += ize
-
-    @classmethod
-    def change_levels(cls,obj,attribute,delta):
-        obj.attribute += delta
