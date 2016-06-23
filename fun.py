@@ -66,24 +66,3 @@ class Fun(object):
 mm = Fun(o)
 asd = mm.select_teams()
 mm.game(asd)
-
-
-# print(asd)
-# print(asd[0])
-# mm.game(asd)
-# mm.game(mm.select_teams())
-#
-#
-#
-# a = [random.randint(0,100) for i in range(48)]
-# new = Fun(a)
-# #print(new.select_teams())
-#
-#
-#
-#
-# a = [random.randint(0,100) for i in range(10)]
-#
-#
-# for i in range(1,10):
-#     print (2**i)
