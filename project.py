@@ -13,8 +13,7 @@ class Project:
             i.knowledge_level) >= min_diff and int(i.knowledge_level) <= max_diff]
         self.min_diff = min_diff
         self.max_diff = max_diff
-        print("A new Project has been started with %s students." %(len(self.students)))
-
+        print("A new Project has been started with %s students." % (len(self.students)))
 
     def find_most_clever(self):
         x = sorted(self.students, key=lambda x: int(x.knowledge_level))

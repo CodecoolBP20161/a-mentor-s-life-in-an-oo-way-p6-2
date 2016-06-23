@@ -43,3 +43,13 @@ class CodecoolClass:
             return x
         except:
             print("No such name!")
+
+    def overall_energy(self):
+        mentors_energy = sum([i.energy_level for i in self.mentors])
+        students_energy = sum([i.energy_level for i in self.students])
+        return (mentors_energy + students_energy)
+
+    def overall_knowledge(self):
+        mentors_knowledge = sum([i.knowledge_level for i in self.mentors])
+        students_knowledge = sum([i.knowledge_level for i in self.students])
+        return (mentors_knowledge + students_knowledge)
