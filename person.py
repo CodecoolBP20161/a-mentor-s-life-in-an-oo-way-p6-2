@@ -28,3 +28,8 @@ class Person:
         self.gender = gender
         self.knowledge_level = int(knowledge_level)
         self.energy_level = int(energy_level)
+
+
+    def change_levels(self,attribute,delta):
+        setattr(self,attribute, getattr(self,attribute)+delta)
+        
