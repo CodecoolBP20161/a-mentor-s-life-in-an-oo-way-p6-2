@@ -16,7 +16,7 @@ class Person:
 
         self.first_name = first_name
         self.last_name = last_name
-        self.year_of_birth = year_of_birth
+        self.year_of_birth = int(year_of_birth)
 
         try:
             if gender not in self.GENDER:
@@ -26,5 +26,5 @@ class Person:
             print('Not a valid gender.')
 
         self.gender = gender
-        self.knowledge_level = knowledge_level
-        self.energy_level = energy_level
+        self.knowledge_level = int(knowledge_level)
+        self.energy_level = int(energy_level)
