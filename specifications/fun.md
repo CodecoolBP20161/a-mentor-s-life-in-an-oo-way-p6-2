@@ -4,7 +4,7 @@
 This class represents the fun activities at CodeCool.
 
 ## Parent class
-Event
+None
 
 ## Attributes
 
@@ -36,13 +36,46 @@ All of the arguments of the class itself.
 #### Return value
 None
 
-### ```tournament(team_size)```
+### ```select_teams()```
 
-Organizes a tournament and calculates winner(s).
+Reads the students csv and selects teams of 2.
+Teams are only accepted if it is in the sol list.
+
 #### Arguments
-* ```team_size```
-  * data type: integer
-  * description: stores the number of players of the teams
+* ```None```
 
 #### Return value
-Returns a new list of students and mentors.With changed attributes.
+Returns a list of lists aka teams!
+
+### ```decide()```
+
+decides between two teams and plays the games between them until the score 6!
+
+#### Arguments
+* ```team1```
+  * data type: list
+  * description: stores team 1 players
+* ```team2```
+  * data type: list
+  * description: stores team 2 players
+* ```xsco```
+  * data type: integer
+  * description: team 1 score
+* ```ysco```
+  * data type: integer
+  * description: team 2 score
+
+#### Return value
+Returns a 3 element tuple, (winner team, xsco, ysco)
+
+### ```game()```
+
+the main method of the fun class
+
+#### Arguments
+* ```team```
+ * data type: list of lists
+ * description: stores the teams in list of lists that it got from the select_teams method
+
+#### Return value
+None
