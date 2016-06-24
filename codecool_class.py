@@ -53,5 +53,3 @@ He already had his coffee so he is ready to work.'''.format(name[0], name[1]))
         mentors_knowledge = sum([i.knowledge_level for i in self.mentors])
         students_knowledge = sum([i.knowledge_level for i in self.students])
         return (mentors_knowledge + students_knowledge)
-
-        

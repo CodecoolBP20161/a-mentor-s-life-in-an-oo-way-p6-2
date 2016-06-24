@@ -31,3 +31,4 @@ class Person:
 
     def change_levels(self, attribute, delta):
         setattr(self, attribute, getattr(self, attribute)+delta)
+        return self

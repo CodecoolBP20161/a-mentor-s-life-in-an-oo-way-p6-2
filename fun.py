@@ -4,8 +4,6 @@ from codecool_class import *
 from datetime import date
 import random
 
-students = CodecoolClass.generate_local().students
-
 
 class Fun:
 
@@ -30,6 +28,7 @@ class Fun:
             s.remove(v)
             for names in not_interested:
                 print("%s was not interested in playing." % (names[0].first_name))
+        print("\n")
         return s
 
     def decide(self, team1, team2, xsco, ysco):
@@ -71,6 +70,7 @@ class Fun:
 
             for i, j, k in zip(x, y, c):
                 print(i + " and " + j + " won the Quarterfinals!(" + str(k[0]) + "-" + str(k[1]) + ")")
+            print("\n")
 
         elif len(self.winner) == 2:
             # prints Semifinals
@@ -80,6 +80,7 @@ class Fun:
 
             for i, j, k in zip(q, w, zs):
                 print(i + " and " + j + " won the Semifinals!(" + str(k[0]) + "-" + str(k[1]) + ")")
+            print("\n")
 
         if len(self.winner) == 1:
             # prints the winner of the game and increases the corresponding energy levels
@@ -88,6 +89,7 @@ class Fun:
             print(self.winner[0][0].first_name + " and " + self.winner[0][1].first_name + " won the tournament!(" +
                   str(a[0]) + "-" + str(a[1]) + ")")
             epicwin = self.winner[0]
+            print("\n")
             print(epicwin[0].first_name + "'s energy level increased by 2")
             print(epicwin[1].first_name + "'s energy level increased by 2")
             epicwin[0].change_levels("energy_level", 2)
@@ -96,7 +98,3 @@ class Fun:
 
         else:
             self.game(self.winner)
-
-mm = Fun(students)
-team = mm.select_teams()
-mm.game(team)
