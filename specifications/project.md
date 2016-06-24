@@ -14,9 +14,12 @@ Event
 * ```students```
   * data type: list
   * description: stores a list of students who have a certain level of knowledge
-* ```difficulty```
+* ```min_diff```
    * data type: integer
-   * description: stores an abstract number represents project's difficulty
+   * description: stores an abstract number represents a minimum difficulty level
+* ```max_diff```
+  * data type: integer
+  * description: stores an abstract number represents a maximum difficulty level
 
 
 ## Instance methods

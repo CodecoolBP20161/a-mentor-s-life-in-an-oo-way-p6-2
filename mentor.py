@@ -14,6 +14,7 @@ class Mentor(Person):
             mentorreader = csv.reader(csvfile, delimiter=",")
             rows = list(mentorreader)
             mentor_objects = [Mentor(row[6], row[7], row[0], row[1], row[2], row[3], row[4], row[5]) for row in rows]
+            print("\nMentors have been initialized from CSV. Here they are:\n")
+            for i in mentor_objects:
+                print(i.first_name, i.last_name)
             return mentor_objects
-
-print(Mentor.create_by_csv("data/mentors.csv"))

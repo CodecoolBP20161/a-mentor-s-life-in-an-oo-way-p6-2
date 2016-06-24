@@ -13,4 +13,5 @@ class Student(Person):
             studentsreader = csv.reader(csvfile, delimiter=",")
             rows = list(studentsreader)
             x = [Student(i[0], i[1], i[2], i[3], i[4], i[5]) for i in rows]
+            print("\nStudents have been initialized from CSV.")
             return x
